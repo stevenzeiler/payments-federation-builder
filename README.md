@@ -39,6 +39,8 @@ node_modules/.bin/babel-node test/random_subclass.js        # subclass with a ra
 
 ## Usage
 
+Install from a checkout; consumers must compile `node_modules/payments-federation-builder` with Babel, because `main` is untranspiled ES6 **(inference: Babel 5 skips `node_modules` by default)**.
+
 ```js
 import Federation from 'payments-federation-builder'
 
